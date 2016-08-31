@@ -9,10 +9,6 @@ import (
 const ROUTER_IP = "http://fritz.box:49000/igddesc.xml"
 
 func main() {
-	gateway2()
-}
-
-func gateway2() {
 	routerPath, err := url.Parse(ROUTER_IP)
 	if err != nil {
 		log.Fatal(err)
