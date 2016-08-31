@@ -1,0 +1,10 @@
+# Use https://travis-ci.org/ for automatic testing
+language: go
+
+go:
+# Use only the latest version
+  - tip
+
+install:
+# Resolve dependencies
+  - go get -u "github.com/huin/goupnp"
